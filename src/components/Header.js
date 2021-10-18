@@ -8,7 +8,8 @@ function SearchBar() {
 
     function search_beer(event) {
 
-        if (name && event.key === 'Enter') {
+
+        if (name && event.key === 'Enter' || event.target.nodeName === 'BUTTON') {
             history.push(`/?name=${encodeURIComponent(name)}`)
         }
     }
