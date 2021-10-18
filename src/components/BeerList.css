@@ -1,0 +1,78 @@
+.BeerList {
+    margin: 1em;
+}
+
+.BeerList_beers {
+    width: 100%;
+    max-width: 58em;
+    margin: 0 auto 1.5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+    grid-auto-rows: 20em;
+    gap: 1em;
+}
+
+.BeerList_beer {
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 0.25em;
+    box-shadow: 0 0 0 black;
+    transition: ease-in 100ms;
+    transition-property: transform, border-color, box-shadow;
+}
+
+.BeerList_beer:hover {
+    transform: scale(1.02);
+    border-color: white;
+    box-shadow: 0 0 0.3em black;
+}
+
+.BeerList_beer > a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;   
+}
+
+.BeerList_image {
+    align-self: center;
+    height: 70%;
+}
+
+.BeerList_info {
+    color: black;
+    margin-top: auto;
+}
+
+.BeerList_name,
+.BeerList_tagline {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.BeerList_name {
+    margin: 0 0 0.5em;
+}
+
+.BeerList_paging {
+    width: 16em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.BeerList_button {
+    font: 1.1em 'Roboto', sans-serif;
+    width: 6em;
+    height: 2em;
+}
+
+
+.BeerList_lastpage {
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 1.1em;
+}

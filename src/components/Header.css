@@ -1,0 +1,36 @@
+.Header {
+    padding: 1em;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.Header_search_bar {
+    font: 1.25em 'Roboto', sans-serif;
+    width: 100%;
+    max-width: 25em;
+    height: 2em;
+    padding: 0.1em 0.5em;
+    border: 1px solid black;
+    border-radius: 0.25em 0 0 0.25em;
+    display: block;
+}
+
+
+.Header_search_button {
+    font: 1.25em 'Roboto', sans-serif;
+    border: 1px solid black;
+    border-radius: 0 0.25em 0.25em 0;
+    margin-left: -1px;
+}
+
+.Header_search_button:active {
+    background: white;
+}
+
+.Header_search_button:focus {
+    box-shadow: inset 0 0 0 1px black;
+}
