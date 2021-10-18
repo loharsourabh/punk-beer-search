@@ -13,7 +13,6 @@ function Beer() {
     });
 
     useEffect(() => {
-        console.log(beer);
         if (!beer) {
             fetch(`https://api.punkapi.com/v2/beers?beer_name=${name}`)
             .then(response => response.json())
